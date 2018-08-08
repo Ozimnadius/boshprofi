@@ -1,0 +1,13 @@
+.category {
+  @include col;
+  @include size(18);
+
+  &__sort {
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    @include col;
+    @include size(8);
+  }
+}

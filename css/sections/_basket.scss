@@ -1,0 +1,125 @@
+.basket {
+  padding-bottom: 40px;
+
+  &__table {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    margin-bottom: 40px;
+  }
+
+  &__thead {
+    border-bottom: 1px solid #249f7f;
+  }
+  &__th {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 15px;
+
+    color: rgba($text, .5);
+    font-size: 14px;
+
+    &_left {
+      justify-content: flex-start;
+    }
+  }
+
+  /* left */
+  &__left {
+    @include col;
+    @include size(4);
+  }
+  /* END left */
+
+  /* center */
+  &__center {
+    @include col;
+    @include size(18);
+
+    .row {
+      align-items: center;
+    }
+  }
+
+  &__w {
+    &-title {
+      @include col;
+      $width: (3/9)*24;
+      @include size($width);
+    }
+    &-price, &-count, &-sum {
+      @include col;
+      $width: (2/9)*24;
+      @include size($width);
+    }
+  }
+  /* END center */
+
+  /* right */
+  &__right {
+    @include col;
+    @include size(2);
+  }
+  /* END right */
+
+  &__item {
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &-img {
+      padding: 30px;
+      padding-right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-title {
+      color: #222222;
+      line-height: 1.375;
+      letter-spacing: 0.32px;
+    }
+
+    &-price {
+      color: #ed1c24;
+      font-weight: 700;
+      letter-spacing: 0.32px;
+      text-align: center;
+    }
+    &-sum {
+      @extend .basket__item-price;
+    }
+
+    &-delete {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__submit {
+    margin: 0;
+  }
+
+  &__total {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+
+
+    &-val {
+      color: #249f7f;
+    }
+  }
+}

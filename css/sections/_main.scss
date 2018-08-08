@@ -1,0 +1,224 @@
+.main {
+  &_white {
+    background-color: #ffffff;
+  }
+  margin-bottom: 40px;
+  &-cats {
+    margin-bottom: 45px;
+
+    &__title {
+      margin-bottom: 45px;
+    }
+  }
+  &-cat {
+    @include col;
+    @include size(8);
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+
+    &__img {
+      position: absolute;
+      top: -21px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      z-index: 10;
+    }
+    &__pic {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    &__title {
+      position: absolute;
+      z-index: 20;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 40px 20px;
+      text-align: center;
+
+      color: #2c3e50;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.36px;
+    }
+  }
+
+  &-delivery {
+    background-color: #ffffff;
+    margin-bottom: 25px;
+    padding: 90px 0;
+
+    .container  {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__title {
+      margin-bottom: 25px;
+    }
+
+    /* left */
+    &__left {
+      flex-basis: 455px;
+    }
+
+    &__desc {
+      line-height: 1.5;
+    }
+    /* END left */
+
+    /* center */
+    &__seporator {
+      width: 1px;
+      height: 100%;
+      background-color: #2c3e50;
+    }
+    /* END center */
+
+    /* right */
+    &__right {
+      flex-basis: 455px;
+    }
+
+    &__buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+    &__button {
+      width: 223px;
+      height: 51px;
+      border-radius: 2px;
+      background-color: #249f7f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &_dislike {
+        background-color: $text;
+      }
+
+      &-svg {
+        height: 20px;
+        fill: $bg;
+        margin-right: 15px;
+      }
+      &-text {
+        color: #ffffff;
+        font-family: "Museo Sans Cyrl -700";
+        font-weight: 700;
+        letter-spacing: 0.32px;
+      }
+    }
+
+    &__subtitle {
+      font-weight: 700;
+      line-height: 1.25;
+    }
+    /* END right */
+  }
+
+  &-articles {
+    margin-top: 30px;
+    margin-bottom: 38px;
+
+    &__title {
+      margin-bottom: 30px;
+    }
+
+    &__link {
+
+      &-svg {
+        height: 6px;
+        fill: #ffffff;
+        margin-left: 40px;
+        transform: rotate(-90deg);
+      }
+    }
+  }
+  &-article {
+    @include col;
+    @include size(6);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eeeeee;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+    transition: .3s;
+
+    &:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    &__img {
+      position: relative;
+
+      &-img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        display: flex;
+        align-items: center;
+      }
+      &-pic {
+        width: 100%;
+      }
+    }
+
+    &__content {
+      padding: 25px 20px 35px 20px;
+      flex-grow: 1;
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__title {
+      color: #222222;
+      line-height: 1.25;
+      font-weight: 400;
+      letter-spacing: 0.32px;
+      margin-bottom: 10px;
+    }
+
+    &__date {
+      color: #888888;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.28px;
+      margin-bottom: 15px;
+      margin-top: auto;
+    }
+  }
+
+  &-about {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    padding: 85px 0 60px 0;
+
+    &__content {
+      padding-right: 100px;
+
+      p {
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+      }
+    }
+
+    &__link {
+      color: #249f7f;
+      font-weight: 700;
+      letter-spacing: 0.32px;
+    }
+  }
+}

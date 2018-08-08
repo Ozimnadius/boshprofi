@@ -1,0 +1,75 @@
+//variables
+//fonts
+$font: 'Museo Sans Cyrl', Arial, sans-serif;
+
+//colors
+$text: #444444;
+$bg: #fafafa;
+
+//another
+$font-size: 16px;
+
+//layout
+/*-----------------SECTION-MIXINS--------------------*/
+@import "layout/_mixins";
+/*------------------------SECTION-FONTS----------------*/
+@import "layout/_fonts";
+/*------------------------SECTION-SMART-GRID----------------*/
+@import "layout/_smart-grid";
+/*------------------------SECTION-ADJUSTMENT----------------*/
+@import "layout/_adjustment";
+/*-----------------SECTION-HOVER-ANIM--------------------*/
+@import "layout/_hover-anim";
+/*------------------------SECTION-COMMON----------------*/
+@import "layout/_common";
+
+//sections
+/*------------------------SECTION-HEADER----------------*/
+@import "sections/_header";
+/*-----------------SECTION-CALLORDER--------------------*/
+@import "sections/_callorder";
+/*-----------------SECTION-MAIN--------------------*/
+@import "sections/_main";
+/*-----------------SECTION-SLIDER--------------------*/
+@import "sections/_slider";
+/*-----------------SECTION-MAIN-CATS--------------------*/
+@import "sections/_main-cats";
+/*-----------------SECTION-ITEMS--------------------*/
+@import "sections/_items";
+/*-----------------SECTION-LEADERS--------------------*/
+@import "sections/_leaders";
+/*-----------------SECTION-ADVANTAGES--------------------*/
+@import "sections/_advantages";
+/*-----------------SECTION-BREADCRUMBS--------------------*/
+@import "sections/_breadcrumbs";
+/*-----------------SECTION-CATALOG--------------------*/
+@import "sections/_catalog";
+/*-----------------SECTION-FILTERS--------------------*/
+@import "sections/_filters";
+/*-----------------SECTION-CATEGORY--------------------*/
+@import "sections/_category";
+/*-----------------SECTION-SORT--------------------*/
+@import "sections/_sort";
+/*-----------------SECTION-PRODUCT--------------------*/
+@import "sections/_product";
+/*-----------------SECTION-ABOUT--------------------*/
+@import "sections/_about";
+/*-----------------SECTION-DELIVERY--------------------*/
+@import "sections/_delivery";
+/*-----------------SECTION-CONTACTS--------------------*/
+@import "sections/_contacts";
+/*-----------------SECTION-BASKET--------------------*/
+@import "sections/_basket";
+/*-----------------SECTION-CABINET--------------------*/
+@import "sections/_cabinet";
+/*-----------------SECTION-POPUP--------------------*/
+@import "sections/_popup";
+/*------------------------SECTION-FOOTER---------------------*/
+@import "sections/_footer";
+
+
+.debug {
+  //@include debug(rgba(0,0,0,0.3), 1px solid red);
+  //z-index: 100;
+  //top: 0;
+}

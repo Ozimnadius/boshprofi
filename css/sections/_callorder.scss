@@ -1,0 +1,33 @@
+.callorder {
+
+  width: 480px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  padding: 60px;
+  position: relative;
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  &__block {
+    margin-bottom: 25px;
+  }
+
+  &__submit {
+    margin-bottom: 15px;
+  }
+
+  &__button {
+    color: #019875;
+    font-weight: 500;
+    border-bottom: 1px dashed transparent;
+    transition: .3s;
+
+    &:hover {
+      border-bottom: 1px dashed #019875;
+    }
+  }
+}

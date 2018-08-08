@@ -1,0 +1,36 @@
+.leaders {
+  margin-bottom: 40px;
+
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__more {
+
+    &.open {
+      .leaders__more-text {
+        display: none;
+        &-hidden {
+          display: block;
+        }
+      }
+      .leaders__more-svg {
+        transform: rotate(-180deg);
+      }
+    }
+    &-text {
+
+
+      &-hidden {
+        display: none;
+      }
+    }
+    &-svg {
+      margin-left: 20px;
+      height: 6px;
+      fill: #ffffff;
+      transition: .3s;
+    }
+  }
+}

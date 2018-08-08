@@ -1,0 +1,33 @@
+.about {
+  padding-bottom: 25px;
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__content {
+    line-height: 1.5;
+    margin-bottom: 25px;
+  }
+
+  &__img {
+    margin-bottom: 25px;
+  }
+
+  &__pic {
+    width: 100%;
+  }
+
+  &__left {
+    @include col;
+    @include size(14);
+  }
+  &__right {
+    @include col;
+    @include size(10);
+  }
+
+  &__left-2, &__right-2 {
+    @include col;
+    @include size(12);
+  }
+}
