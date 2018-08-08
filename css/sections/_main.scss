@@ -49,7 +49,9 @@
   &-delivery {
     background-color: #ffffff;
     margin-bottom: 25px;
-    padding: 90px 0;
+    padding-top: 85px;
+    padding-bottom: 100px;
+    //padding: 90px 0;
 
     .container  {
       display: flex;
@@ -176,7 +178,7 @@
     }
 
     &__content {
-      padding: 25px 20px 35px 20px;
+      padding: 20px 20px 35px 20px;
       flex-grow: 1;
 
       display: flex;
@@ -188,7 +190,7 @@
       line-height: 1.25;
       font-weight: 400;
       letter-spacing: 0.32px;
-      margin-bottom: 10px;
+      margin-bottom: 13px;
     }
 
     &__date {
@@ -196,7 +198,7 @@
       font-size: 14px;
       font-weight: 400;
       letter-spacing: 0.28px;
-      margin-bottom: 15px;
+      margin-bottom: 17px;
       margin-top: auto;
     }
   }

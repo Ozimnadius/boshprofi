@@ -26,7 +26,7 @@
     <!-- catalog -->
     <section class="catalog">
         <div class="container">
-            <h2 class="title catalog__title">
+            <h2 class="page-title catalog__title">
                 каталог товаров
             </h2>
 

@@ -2,6 +2,10 @@
   @include col;
   @include size(18);
 
+  &__title {
+    margin-bottom: 35px;
+  }
+
   &__sort {
     margin-bottom: 30px;
   }

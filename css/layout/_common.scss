@@ -46,6 +46,7 @@
   display: flex;
   flex-wrap: wrap;
   color: #333333;
+  font-size: 14px;
 
   &__icon {
     margin-right: 10px;
@@ -461,6 +462,10 @@
     width: 9px;
     fill: #dddddd;
   }
+}
+
+.form {
+  margin-bottom: 32px;
 }
 
 input[type=number]::-webkit-inner-spin-button,

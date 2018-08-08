@@ -1,6 +1,10 @@
 .breadcrumbs {
   padding: 75px 0 30px 0;
 
+  &_white {
+    background: #ffffff;
+  }
+
   &__list {
     display: flex;
   }

@@ -32,6 +32,10 @@
     <!-- END breadcrumbs -->
 
     <div class="container">
+        <h2 class="category__title page-title">
+            профессиональные инструменты: дрели
+        </h2>
+
         <form action="" method="post" class="form">
             <div class="row">
 
