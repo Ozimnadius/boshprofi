@@ -27,11 +27,11 @@
                                 <div class="slide__img">
                                     <img src="images/content/slider/slide1.png" alt="" class="slide__pic">
                                 </div>
-                                <div class="slide__content content">
-                                    <h2 style="color: #f9f9f9; font-size: 30px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; margin: 0; margin-bottom: 15px;">
+                                <div class="slide__content">
+                                    <h2 class="slide__content-title">
                                         Скидки на бытовые дрели
                                     </h2>
-                                    <p style="margin: 0; color: #f9f9f9; font-size: 18px;">
+                                    <p class="slide__content-text">
                                         До конца июня скидки на все дрели 10% ! <br>
                                         В каталоге вы сможете подобрать дрель на любой вкус
                                     </p>
@@ -46,11 +46,11 @@
                                 <div class="slide__img">
                                     <img src="images/content/slider/slide2.png" alt="" class="slide__pic">
                                 </div>
-                                <div class="slide__content content">
-                                    <h2 style="color: #f9f9f9; font-size: 30px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; margin: 0; margin-bottom: 15px;">
-                                        Скидки на промышленные дрели
+                                <div class="slide__content">
+                                    <h2 class="slide__content-title">
+                                        Скидки на бытовые дрели
                                     </h2>
-                                    <p style="margin: 0; color: #f9f9f9; font-size: 18px;">
+                                    <p class="slide__content-text">
                                         До конца июня скидки на все дрели 10% ! <br>
                                         В каталоге вы сможете подобрать дрель на любой вкус
                                     </p>
@@ -65,11 +65,11 @@
                                 <div class="slide__img">
                                     <img src="images/content/slider/slide1.png" alt="" class="slide__pic">
                                 </div>
-                                <div class="slide__content content">
-                                    <h2 style="color: #f9f9f9; font-size: 30px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; margin: 0; margin-bottom: 15px;">
+                                <div class="slide__content">
+                                    <h2 class="slide__content-title">
                                         Скидки на бытовые дрели
                                     </h2>
-                                    <p style="margin: 0; color: #f9f9f9; font-size: 18px;">
+                                    <p class="slide__content-text">
                                         До конца июня скидки на все дрели 10% ! <br>
                                         В каталоге вы сможете подобрать дрель на любой вкус
                                     </p>
@@ -84,11 +84,11 @@
                                 <div class="slide__img">
                                     <img src="images/content/slider/slide2.png" alt="" class="slide__pic">
                                 </div>
-                                <div class="slide__content content">
-                                    <h2 style="color: #f9f9f9; font-size: 30px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; margin: 0; margin-bottom: 15px;">
-                                        Скидки на промышленные дрели
+                                <div class="slide__content">
+                                    <h2 class="slide__content-title">
+                                        Скидки на бытовые дрели
                                     </h2>
-                                    <p style="margin: 0; color: #f9f9f9; font-size: 18px;">
+                                    <p class="slide__content-text">
                                         До конца июня скидки на все дрели 10% ! <br>
                                         В каталоге вы сможете подобрать дрель на любой вкус
                                     </p>
@@ -98,6 +98,7 @@
                                 </a>
                             </div>
                             <!-- END slide -->
+
                         </div>
 
                         <div class="swiper-pagination slider__pagination"></div>

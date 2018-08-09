@@ -73,6 +73,10 @@
 
                 </div>
                 <!-- END right -->
+
+                <div class="copy copy_mobile">
+                    Boschprof.ru 2018. Все права защищены
+                </div>
             </div>
         </div>
     </div>

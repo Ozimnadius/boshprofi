@@ -1,4 +1,5 @@
 .button {
+  max-width: 100%;
   width: 300px;
   height: 51px;
   border-radius: 2px;
@@ -39,6 +40,18 @@
     box-shadow: 0 7px 16px rgba(0, 0, 0, 0.26);
     color: #ffffff;
     border: 1px solid $text;
+  }
+}
+
+.logo {
+  &__img {
+    @include lg-block {
+      height: 55px;
+    };
+    @include sm-block {
+      height: auto;
+      max-height: 45px;
+    };
   }
 }
 
@@ -135,8 +148,18 @@
   &__img {
     position: relative;
     margin-right: 35px;
+
+    @include lg-block {
+      margin-right: 0;
+    };
   }
   &__count {
+    @include lg-block {
+      width: 20px;
+      height: 20px;
+      font-size: 10px;
+    };
+
     width: 26px;
     height: 26px;
     border: 2px solid #666666;
@@ -149,7 +172,7 @@
     position: absolute;
     top: -5px;
     left: 50%;
-    margin-left: -10px;
+    margin-left: -7px;
 
     display: flex;
     align-items: center;
@@ -161,6 +184,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include lg-block {
+      display: none;
+    };
   }
   &__title {
     color: #333333;
@@ -178,6 +205,11 @@
     width: 55px;
     height: 44px;
     fill: #666666;
+
+    @include lg-block {
+      width: 37px;
+      height: 30px;
+    };
   }
 }
 
@@ -348,6 +380,9 @@
 }
 
 .title {
+  @include sm-block {
+    font-size: 20px;
+  };
   color: #222222;
   font-size: 24px;
   font-weight: 700;
@@ -363,9 +398,22 @@
 }
 
 .copy {
+  @include lg-block {
+    display: none;
+  };
   color: #333333;
   font-size: 14px;
   letter-spacing: 0.28px;
+
+  &_mobile {
+    display: none;
+
+    @include lg-block {
+      width: 100%;
+      display: block;
+      text-align: center;
+    };
+  }
 }
 
 .page {

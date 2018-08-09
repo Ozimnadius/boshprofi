@@ -2,6 +2,9 @@
 
   /* top */
   &__top {
+    @include lg-block {
+      display: none;
+    };
 
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     margin-bottom: 15px;
@@ -38,15 +41,53 @@
     background-color: #ffffff;
     padding: 22px 0;
 
+    .row {
+      @include lg-block {
+        justify-content: space-between;
+      };
+      @include sm-block {
+        flex-wrap: nowrap;
+      };
+    }
+
+    @include lg-block {
+      padding: 0;
+    };
+
+    &-mmenu {
+      @include col;
+      @include lg-block {
+        display: flex;
+        align-items: center;
+        border-right: 1px solid #eeeeee;
+        padding-right: 20px;
+      };
+
+      display: none;
+
+    }
 
     &-left {
       @include col;
       @include size(6);
+      @include lg-block {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+      };
+      @include sm-block {
+        margin: 0;
+      };
     }
 
     &-center{
       @include col;
       @include size(11);
+      @include lg-block{
+        display: none;
+      };
+
       padding: 0 15px;
 
       align-self: center;
@@ -66,10 +107,14 @@
     &-right {
       @include col;
       @include size(7);
+      @include lg-block {
+        width: auto;
+        padding-left: 20px;
+      };
 
       border-left: 1px solid #eeeeee;
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
     }
   }
@@ -87,6 +132,9 @@
     &-left {
       @include col;
       @include size(17);
+      @include lg-block {
+        display: none;
+      };
       padding-right: 80px;
 
     }
@@ -94,8 +142,28 @@
     &-right {
       @include col;
       @include size(7);
+      @include size-lg(24);
+      @include lg-block {
+        padding: 12px 0;
+      };
     }
   }
   /* END bottom */
 
+}
+
+.mmenu {
+  &__button {
+
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-line {
+      background: #666666;
+      width: 29px;
+      height: 3px;
+    }
+  }
 }

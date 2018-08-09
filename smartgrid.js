@@ -12,6 +12,7 @@ smartgrid('./css/layout', {
     breakPoints: {
         lg: {
             width: "1199.99px",
+            fields: "20px",
         },
         md: {
             width: "991.99px",
