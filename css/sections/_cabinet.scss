@@ -3,6 +3,9 @@
 }
 
 .switches {
+  @include xs-block {
+    flex-wrap: wrap;
+  };
   border-bottom: 1px solid #ddd;
   display: flex;
 }

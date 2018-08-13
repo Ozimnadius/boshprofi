@@ -131,6 +131,13 @@ $(function () {
         }
     });
 
+    $('body').on('click', '.filters', function (e) {
+        var popup = $(this);
+        if ($(e.target).hasClass('filters')) {
+            popup.removeClass('active');
+        }
+    });
+
     $('body').on('click', '.jsPopupOpen', function (e) {
         e.preventDefault();
         var popup = $('.popup'),
@@ -274,23 +281,21 @@ $(function () {
         snapAmount: 91.5
     });
 
-    $('.related__items-list').mCustomScrollbar({
-        mouseWheel: {preventDefault: true},
-        theme: "dark",
-    });
-
     $('.docs__items-list').mCustomScrollbar({
         mouseWheel: {preventDefault: true},
         theme: "dark",
     });
 
     $('.filter__title').on('click', function (e) {
-        var $this = $(this),
-            filter = $this.closest('.filter'),
-            hidden = filter.find('.filter__hidden');
+        if ($(document).width() > 1199.99) {
+            var $this = $(this),
+                filter = $this.closest('.filter'),
+                hidden = filter.find('.filter__hidden');
 
-        $this.toggleClass('open');
-        hidden.slideToggle(500);
+
+            $this.toggleClass('open');
+            hidden.slideToggle(500);
+        }
     });
 
     $('.filter__range-range').each(function (indx, elem) {
@@ -339,6 +344,20 @@ $(function () {
         range.slider("values", [valFrom, val]);
     });
 
+    $('.filters-button').on('click', function (e) {
+        var button = $(this),
+            popup = $('.filters');
+
+        popup.toggleClass('active');
+    });
+
+    $('.filters__title-svg').on('click', function (e) {
+        var button = $(this),
+            popup = $('.filters');
+
+        popup.toggleClass('active');
+    });
+
 
     /*CABINET*/
     $('.profile__svg').on('mouseover', function (e) {
@@ -370,7 +389,7 @@ $(function () {
         var maxHeight = 0;
         $('.tab').each(function (indx, elem) {
             var tab = $(elem),
-                height = tab.find('.tab__content').outerHeight()+80;
+                height = tab.find('.tab__content').outerHeight() + 80;
 
             if (maxHeight <= height) {
                 maxHeight = height;
@@ -443,10 +462,37 @@ $(function () {
         slidesToShow: 3,
         slidesToScroll: 1,
         prevArrow: '.related__prev .related__button',
-        nextArrow: '.related__next .related__button'
+        nextArrow: '.related__next .related__button',
+
+        responsive: [
+            {
+                breakpoint: 1199.99,
+                settings: {
+                    // theme: 'dark',
+                    // speed: 300,
+                    // infinite: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    // prevArrow: '.related__prev .related__button',
+                    // nextArrow: '.related__next .related__button',
+                }
+            },
+            {
+                breakpoint: 767.99,
+                settings: {
+                    speed: 300,
+                    infinite: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    prevArrow: '.related__prev .related__button',
+                    nextArrow: '.related__next .related__button',
+                }
+            },
+        ]
     });
     /*END SLIDERS*/
-});
+})
+;
 
 /*YANDEX*/
 $(function () {

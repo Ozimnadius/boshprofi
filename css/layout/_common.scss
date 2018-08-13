@@ -394,7 +394,7 @@
   @extend .title;
   background-color: #ffffff;
   text-align: center;
-  padding: 25px 0;
+  padding: 25px 15px;
 }
 
 .copy {
@@ -469,6 +469,12 @@
 }
 
 .page-title {
+  @include lg-block {
+    font-size: 24px;
+  };
+  @include sm-block {
+    font-size: 20px;
+  };
   color: #222222;
   font-size: 30px;
   text-transform: uppercase;
@@ -542,6 +548,10 @@ input[type=number] {
   border-radius: 2px;
 }
 
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background: #000;
+}
+
 .mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
   width: 4px;
   border-radius: 2px;
@@ -549,6 +559,7 @@ input[type=number] {
 }
 
 .mCSB_dragger {
+  //background: #000;
   height: 66px !important;
 }
 

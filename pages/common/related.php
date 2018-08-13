@@ -155,7 +155,7 @@
                             Топ-принадлежности
                         </div>
                         <div class="related__items-wrapper">
-                            <div class="related__items-list">
+                            <div class="related__items-list" id="scroll">
                                 <a href="product.php" class="related__item">
                                     <span class="related__item-title">
                                         Алмазные коронкиDiamond for Hard Ceramics

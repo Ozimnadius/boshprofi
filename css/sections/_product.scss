@@ -4,6 +4,12 @@
   margin-bottom: 40px;
 
   &__title {
+    @include lg-block {
+      font-size: 24px;
+    };
+    @include sm-block {
+      font-size: 20px;
+    };
     color: #222222;
     text-transform: uppercase;
     letter-spacing: 0.6px;
@@ -20,6 +26,11 @@
     @include col;
     @include size(12.6);
     @include shift-right(1.2);
+    @include size-lg(24);
+    @include shift-lg-right(0);
+    @include lg-block {
+      margin-bottom: 40px;
+    };
   }
 
   &__img {
@@ -48,11 +59,21 @@
   &__right {
     @include col;
     @include size(10.2);
+    @include size-lg(24);
+    @include sm-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    };
   }
   /* END right */
 
 
   &__top {
+    @include sm-block {
+      width: 100%;
+      flex-wrap: wrap;
+    };
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #eeeeee;
@@ -60,6 +81,10 @@
     margin-bottom: 20px;
 
     &-left {
+      @include sm-block {
+        width: 100%;
+        margin-bottom: 15px;
+      };
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -67,6 +92,9 @@
   }
 
   &__price {
+    @include sm-block {
+      font-size: 24px;
+    };
     color: #f24841;
     font-size: 30px;
     font-weight: 900;
@@ -80,6 +108,10 @@
   }
 
   &__avaible {
+    @include sm-block {
+      font-size: 14px;
+      text-align: left;
+    };
     text-align: right;
     color: #249f7f;
     font-size: 18px;
@@ -98,6 +130,9 @@
 
 
   &__props {
+    @include sm-block {
+      width: 100%;
+    };
     margin-bottom: 35px;
   }
   &__prop {
@@ -133,21 +168,46 @@
   }
 
   &__buttons {
+    @include sm-block {
+      width: 100%;
+    };
     margin-bottom: 25px;
 
     &-left, &-right {
       @include col;
-
     }
     &-left {
       @include size(14);
+      @include size-lg(10);
+      @include size-xs(24);
+      @include xs-block {
+        margin-bottom: 20px;
+      };
     }
     &-right {
       @include size(10);
+      @include size-lg(6);
+      @include size-sm(8);
+      @include size-xs(24);
+      @include xs-block {
+        margin-top: 15px;
+      };
       display: flex;
       align-items: center;
       justify-content: center;
     }
+  }
+
+  &__mobile {
+
+    @include col;
+    @include size(24);
+    @include xs-block {
+      display: flex;
+    };
+    display: none;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__add {
@@ -176,11 +236,21 @@
   }
 
   &__compare, &__favorite {
+    @include lg-block {
+      display: inline-flex;
+    };
+    @include xs-block {
+      display: none;
+    };
     color: #2c3e50;
     letter-spacing: 0.32px;
 
     display: flex;
     align-items: center;
+
+    &_mobile {
+      display: flex;
+    }
 
     &-svg {
       height: 14px;
@@ -189,20 +259,40 @@
     }
   }
   &__compare {
+    @include lg-block {
+      margin-bottom: 0;
+      margin-right: 120px;
+    };
+    @include sm-block {
+      margin-bottom: 15px;
+      margin-right: 0;
+    };
     margin-bottom: 14px;
   }
 
   &__switches {
+    @include sm-block {
+      margin-top: 40px;
+    };
     margin-top: 60px;
   }
 }
 
 .snaps {
+  @include lg-block {
+    justify-content: center;
+  };
+  @include sm-block {
+    justify-content: flex-start;
+  };
   display: flex;
   justify-content: flex-end;
   align-items: center;
 
   &__container {
+    @include sm-block {
+      margin: 0;
+    };
     width: 420px;
     min-width: 420px;
     height: 100px;
@@ -210,6 +300,9 @@
   }
 
   &__prev,&__next {
+    @include sm-block {
+      display: none;
+    };
     cursor: pointer;
   }
   &__svg {
@@ -296,6 +389,12 @@
   &__left, &__right {
     @include col;
     @include size(12);
+    @include size-lg(24);
+  }
+  &__left {
+    @include lg-block {
+      margin-bottom: 40px;
+    };
   }
 
   &__block {
@@ -336,6 +435,10 @@
   }
 
   &__title {
+    @include lg-block{
+      flex-basis: auto;
+      flex-grow: 1;
+    };
     letter-spacing: 0.32px;
     flex-basis: 70%;
     display: flex;

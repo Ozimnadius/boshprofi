@@ -1,13 +1,23 @@
 .category {
   @include col;
   @include size(18);
+  @include size-lg(24);
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    @include sm-block {
+
+    };
+  }
 
   &__title {
     margin-bottom: 35px;
   }
 
   &__sort {
-    margin-bottom: 30px;
+    flex-grow: 1;
   }
 
   &__item {

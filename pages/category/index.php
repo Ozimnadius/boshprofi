@@ -42,148 +42,153 @@
 
                 <!-- filters -->
                 <aside class="filters">
-                    <div class="filters__wrapper">
-                        <div class="filters__container">
-                            <div class="filters__title">
-                                Фильтры:
+                    <div class="filters__popup-wrapper">
+                        <div class="filters__wrapper">
+                            <div class="filters__container">
+                                <div class="filters__title">
+                                    Фильтры:
+                                    <svg class="filters__title-svg" viewBox="0 0 26.01 26.01">
+                                        <use xlink:href="images/icons/sprite.svg#delete"></use>
+                                    </svg>
+                                </div>
+
+                                <div class="filters__list">
+                                    <div class="filter" data-from="0" data-to="15000">
+                                        <div class="filter__title">
+                                            <div class="filter__title-text">
+                                                Цена, ք:
+                                            </div>
+                                            <svg class="filter__title-svg" viewBox="0 0 15 8">
+                                                <use xlink:href="images/icons/sprite.svg#arrow-down"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="filter__hidden">
+                                            <div class="filter__inputs">
+                                                <input type="text" name="power__from"
+                                                       class="filter__input filter__input_from" value="0">
+                                                <span class="filter__seporator">-</span>
+                                                <input type="text" name="power__top"
+                                                       class="filter__input filter__input_to" value="15000">
+                                            </div>
+                                            <div class="filter__range">
+                                                <div class="filter__range-range"></div>
+                                            </div>
+                                            <div class="filter__values">
+                                                <div class="filter__value">
+                                                    0
+                                                </div>
+                                                <div class="filter__value">
+                                                    15000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter" data-from="0" data-to="15000">
+                                        <div class="filter__title">
+                                            <div class="filter__title-text">
+                                                Вес, кг:
+                                            </div>
+                                            <svg class="filter__title-svg" viewBox="0 0 15 8">
+                                                <use xlink:href="images/icons/sprite.svg#arrow-down"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="filter__hidden">
+                                            <div class="filter__inputs">
+                                                <input type="text" name="power__from"
+                                                       class="filter__input filter__input_from" value="0">
+                                                <span class="filter__seporator">-</span>
+                                                <input type="text" name="power__top"
+                                                       class="filter__input filter__input_to" value="15000">
+                                            </div>
+                                            <div class="filter__range">
+                                                <div class="filter__range-range"></div>
+                                            </div>
+                                            <div class="filter__values">
+                                                <div class="filter__value">
+                                                    0
+                                                </div>
+                                                <div class="filter__value">
+                                                    15000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter">
+                                        <div class="filter__title">
+                                            <div class="filter__title-text">
+                                                Свёрла:
+                                            </div>
+                                            <svg class="filter__title-svg" viewBox="0 0 15 8">
+                                                <use xlink:href="images/icons/sprite.svg#arrow-down"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="filter__hidden">
+                                            <div class="filter__checkboxes">
+                                                <div class="filter__checkbox">
+                                                    <div class="filter__checkbox-title">
+                                                        По металлу <span
+                                                                class="filter__checkbox-title_count">(14)</span>
+                                                    </div>
+                                                    <input type="checkbox" name="" id="sv1"
+                                                           class="filter__checkbox-input">
+                                                    <label for="sv1" class="filter__checkbox-label">
+                                                        <span class="filter__checkbox-fake"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="filter__checkbox">
+                                                    <div class="filter__checkbox-title">
+                                                        По дереву <span class="filter__checkbox-title_count">(9)</span>
+                                                    </div>
+                                                    <input type="checkbox" name="" id="sv2"
+                                                           class="filter__checkbox-input">
+                                                    <label for="sv2" class="filter__checkbox-label">
+                                                        <span class="filter__checkbox-fake"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="filter__checkbox">
+                                                    <div class="filter__checkbox-title">
+                                                        Ступенчатые, конусные <span
+                                                                class="filter__checkbox-title_count">(12)</span>
+                                                    </div>
+                                                    <input type="checkbox" name="" id="sv3"
+                                                           class="filter__checkbox-input">
+                                                    <label for="sv3" class="filter__checkbox-label">
+                                                        <span class="filter__checkbox-fake"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="filter__checkbox">
+                                                    <div class="filter__checkbox-title">
+                                                        По бетону <span class="filter__checkbox-title_count">(23)</span>
+                                                    </div>
+                                                    <input type="checkbox" name="" id="sv4"
+                                                           class="filter__checkbox-input">
+                                                    <label for="sv4" class="filter__checkbox-label">
+                                                        <span class="filter__checkbox-fake"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="filter__checkbox">
+                                                    <div class="filter__checkbox-title">
+                                                        По камню <span class="filter__checkbox-title_count">(14)</span>
+                                                    </div>
+                                                    <input type="checkbox" name="" id="sv5"
+                                                           class="filter__checkbox-input">
+                                                    <label for="sv5" class="filter__checkbox-label">
+                                                        <span class="filter__checkbox-fake"></span>
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
-
-                            <div class="filters__list">
-                                <div class="filter" data-from="0" data-to="15000">
-                                    <div class="filter__title">
-                                        <div class="filter__title-text">
-                                            Цена, ք:
-                                        </div>
-                                        <svg class="filter__title-svg" viewBox="0 0 15 8">
-                                            <use xlink:href="images/icons/sprite.svg#arrow-down"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="filter__hidden">
-                                        <div class="filter__inputs">
-                                            <input type="text" name="power__from"
-                                                   class="filter__input filter__input_from" value="0">
-                                            <span class="filter__seporator">-</span>
-                                            <input type="text" name="power__top"
-                                                   class="filter__input filter__input_to" value="15000">
-                                        </div>
-                                        <div class="filter__range">
-                                            <div class="filter__range-range"></div>
-                                        </div>
-                                        <div class="filter__values">
-                                            <div class="filter__value">
-                                                0
-                                            </div>
-                                            <div class="filter__value">
-                                                15000
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="filter" data-from="0" data-to="15000">
-                                    <div class="filter__title">
-                                        <div class="filter__title-text">
-                                            Вес, кг:
-                                        </div>
-                                        <svg class="filter__title-svg" viewBox="0 0 15 8">
-                                            <use xlink:href="images/icons/sprite.svg#arrow-down"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="filter__hidden">
-                                        <div class="filter__inputs">
-                                            <input type="text" name="power__from"
-                                                   class="filter__input filter__input_from" value="0">
-                                            <span class="filter__seporator">-</span>
-                                            <input type="text" name="power__top"
-                                                   class="filter__input filter__input_to" value="15000">
-                                        </div>
-                                        <div class="filter__range">
-                                            <div class="filter__range-range"></div>
-                                        </div>
-                                        <div class="filter__values">
-                                            <div class="filter__value">
-                                                0
-                                            </div>
-                                            <div class="filter__value">
-                                                15000
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="filter">
-                                    <div class="filter__title">
-                                        <div class="filter__title-text">
-                                            Свёрла:
-                                        </div>
-                                        <svg class="filter__title-svg" viewBox="0 0 15 8">
-                                            <use xlink:href="images/icons/sprite.svg#arrow-down"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="filter__hidden">
-                                        <div class="filter__checkboxes">
-                                            <div class="filter__checkbox">
-                                                <div class="filter__checkbox-title">
-                                                    По металлу <span
-                                                            class="filter__checkbox-title_count">(14)</span>
-                                                </div>
-                                                <input type="checkbox" name="" id="sv1"
-                                                       class="filter__checkbox-input">
-                                                <label for="sv1" class="filter__checkbox-label">
-                                                    <span class="filter__checkbox-fake"></span>
-                                                </label>
-                                            </div>
-                                            <div class="filter__checkbox">
-                                                <div class="filter__checkbox-title">
-                                                    По дереву <span class="filter__checkbox-title_count">(9)</span>
-                                                </div>
-                                                <input type="checkbox" name="" id="sv2"
-                                                       class="filter__checkbox-input">
-                                                <label for="sv2" class="filter__checkbox-label">
-                                                    <span class="filter__checkbox-fake"></span>
-                                                </label>
-                                            </div>
-                                            <div class="filter__checkbox">
-                                                <div class="filter__checkbox-title">
-                                                    Ступенчатые, конусные <span
-                                                            class="filter__checkbox-title_count">(12)</span>
-                                                </div>
-                                                <input type="checkbox" name="" id="sv3"
-                                                       class="filter__checkbox-input">
-                                                <label for="sv3" class="filter__checkbox-label">
-                                                    <span class="filter__checkbox-fake"></span>
-                                                </label>
-                                            </div>
-                                            <div class="filter__checkbox">
-                                                <div class="filter__checkbox-title">
-                                                    По бетону <span class="filter__checkbox-title_count">(23)</span>
-                                                </div>
-                                                <input type="checkbox" name="" id="sv4"
-                                                       class="filter__checkbox-input">
-                                                <label for="sv4" class="filter__checkbox-label">
-                                                    <span class="filter__checkbox-fake"></span>
-                                                </label>
-                                            </div>
-                                            <div class="filter__checkbox">
-                                                <div class="filter__checkbox-title">
-                                                    По камню <span class="filter__checkbox-title_count">(14)</span>
-                                                </div>
-                                                <input type="checkbox" name="" id="sv5"
-                                                       class="filter__checkbox-input">
-                                                <label for="sv5" class="filter__checkbox-label">
-                                                    <span class="filter__checkbox-fake"></span>
-                                                </label>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
-                    </div>
 
-                    <div class="filters__buttons">
-                        <input type="submit" value="Применить" class="filters__submit button">
-                        <input type="reset" value="Очистить фильтры" class="filters__reset button2">
+                        <div class="filters__buttons">
+                            <input type="submit" value="Применить" class="filters__submit button">
+                            <input type="reset" value="Очистить фильтры" class="filters__reset button2">
+                        </div>
                     </div>
                 </aside>
                 <!-- END filters -->
@@ -191,37 +196,53 @@
                 <!-- category -->
                 <section class="category">
 
-                    <!-- sort -->
-                    <div class="category__sort sort">
-                        <div class="sort__title">
-                            Сортировать:
-                        </div>
-                        <div class="sort__list">
-                            <div class="sort__item">
-                                <input type="checkbox" id="sort1" class="sort__checkbox">
-                                <label for="sort1" class="sort__label">
-                                    <span class="sort__label-fake"></span>
-                                    <span class="sort__label-text">По цене</span>
-                                </label>
-                            </div>
-                            <div class="sort__item">
-                                <input type="checkbox" id="sort2" class="sort__checkbox">
-                                <label for="sort2" class="sort__label">
-                                    <span class="sort__label-fake"></span>
-                                    <span class="sort__label-text">По новизне</span>
-                                </label>
-                            </div>
-                            <div class="sort__item">
-                                <input type="checkbox" id="sort3" class="sort__checkbox">
-                                <label for="sort3" class="sort__label">
-                                    <span class="sort__label-fake"></span>
-                                    <span class="sort__label-text">По популярности</span>
-                                </label>
-                            </div>
+                    <div class="category__row">
 
+                        <!-- filters-button -->
+                        <button type="button" class="filters-button">
+                            <svg class="filters-button__svg" viewBox="0 0 402.577 402.577">
+                                <use xlink:href="images/icons/sprite.svg#filter"></use>
+                            </svg>
+                            <div class="filters-button__text">
+                                Фильтр
+                            </div>
+                        </button>
+                        <!-- END filters-button -->
+
+                        <!-- sort -->
+                        <div class="category__sort sort">
+                            <div class="sort__title">
+                                Сортировать:
+                            </div>
+                            <div class="sort__list">
+                                <div class="sort__item">
+                                    <input type="checkbox" id="sort1" class="sort__checkbox">
+                                    <label for="sort1" class="sort__label">
+                                        <span class="sort__label-fake"></span>
+                                        <span class="sort__label-text">По цене</span>
+                                    </label>
+                                </div>
+                                <div class="sort__item">
+                                    <input type="checkbox" id="sort2" class="sort__checkbox">
+                                    <label for="sort2" class="sort__label">
+                                        <span class="sort__label-fake"></span>
+                                        <span class="sort__label-text">По новизне</span>
+                                    </label>
+                                </div>
+                                <div class="sort__item">
+                                    <input type="checkbox" id="sort3" class="sort__checkbox">
+                                    <label for="sort3" class="sort__label">
+                                        <span class="sort__label-fake"></span>
+                                        <span class="sort__label-text">По популярности</span>
+                                    </label>
+                                </div>
+
+                            </div>
                         </div>
+                        <!-- END sort -->
+
                     </div>
-                    <!-- END sort -->
+
 
                     <!-- items -->
                     <div class="items category__items">

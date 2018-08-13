@@ -248,6 +248,27 @@
                                     <span class="product__add-text">В корзину</span>
                                 </button>
                             </div>
+
+                            <div class="product__mobile">
+                                <!-- compare -->
+                                <button type="button" class="product__compare product__compare_mobile">
+                                    Добавить к сравнению
+                                    <svg class="product__compare-svg" viewBox="0 0 985 861.9">
+                                        <use xlink:href="images/icons/sprite.svg#text"></use>
+                                    </svg>
+                                </button>
+                                <!-- END compare -->
+
+                                <!-- favorite -->
+                                <button type="button" class="product__favorite product__favorite_mobile">
+                                    Добавить в избранное
+                                    <svg class="product__favorite-svg" viewBox="0 0 20.22 19.27">
+                                        <use xlink:href="images/icons/sprite.svg#heart"></use>
+                                    </svg>
+                                </button>
+                                <!-- END favorite -->
+                            </div>
+
                             <div class="product__buttons-right">
                                 <a download href="" class="product__download">
                                     <svg class="product__download-svg" viewBox="0 0 13 19">

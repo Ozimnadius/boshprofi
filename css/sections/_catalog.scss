@@ -95,6 +95,9 @@
   &__prev, &__next {
     @include col;
     @include size(2);
+    @include sm-block {
+      display: none;
+    };
     display: flex;
     align-items: center;
   }
@@ -123,6 +126,7 @@
   &__container {
     @include col;
     @include size(18);
+    @include size-sm(24);
   }
 
   &__items {
@@ -149,9 +153,22 @@
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
       background-color: #ffffff;
       margin-top: auto;
+
     }
     &-list {
       height: 100%;
+      overflow: auto;
+
+      &::-webkit-scrollbar {
+        width: 4px;
+        border-radius: 2px;
+        background-color: #dadada;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #000;
+      }
+
     }
   }
 
