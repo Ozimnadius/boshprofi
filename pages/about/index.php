@@ -42,8 +42,8 @@
 
             <div class="row">
                 <div class="about__left">
-                    <div class="about__img">
-                        <img src="images/content/about1.jpg" alt="" class="about__pic">
+                    <div class="about__img about__img_bg" style="background: url(../images/content/about1.jpg)0 0 no-repeat; background-size:cover;">
+<!--                        <img src="images/content/about1.jpg" alt="" class="about__pic">-->
                     </div>
                 </div>
                 <div class="about__right">

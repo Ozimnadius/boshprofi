@@ -24,8 +24,7 @@
         <!-- center -->
         <div class="header__top-center">
             <div class="header__delivery">
-                <svg class="header__delivery-svg" viewBox="0 0 612 430.12"
-                ">
+                <svg class="header__delivery-svg" viewBox="0 0 612 430.12">
                 <use xlink:href="images/icons/sprite.svg#deliviry"></use>
                 </svg>
                 Доставляем по всей россии

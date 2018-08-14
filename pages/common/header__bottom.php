@@ -6,21 +6,43 @@
             <!-- left -->
             <div class="header__bottom-left">
                 <nav class="nav">
-                    <a href="catalog.php" class="nav__item">
-                        Каталог  товаров
-                    </a>
-                    <a href="about.php" class="nav__item">
-                        О компании
-                    </a>
-                    <a href="delivery.php" class="nav__item">
-                        Доставка и оплата
-                    </a>
-                    <a href="guarantee.php" class="nav__item active">
-                        Гарантии и возврат
-                    </a>
-                    <a href="contacts.php" class="nav__item">
-                        Контакты
-                    </a>
+                    <div class="nav__item">
+                        <a href="catalog.php" class="nav__item-link">
+                            Каталог товаров
+                        </a>
+                        <!-- nav-2 -->
+                        <div class="nav-2">
+                            <a href="category.php" class="nav-2__item">Профессиональный инструмент</a>
+                            <a href="category.php" class="nav-2__item">Инструмент для дома</a>
+                            <a href="category.php" class="nav-2__item">Садовый инструмент</a>
+                            <a href="category.php" class="nav-2__item">Принадлежности для профессионального инструмента</a>
+                            <a href="category.php" class="nav-2__item">Принадлежности для домашнего инструмента</a>
+                            <a href="category.php" class="nav-2__item">Принадлежности для домашнего инструмента</a>
+                        </div>
+                        <!-- END nav-2 -->
+
+                    </div>
+
+                    <div class="nav__item">
+                        <a href="about.php" class="nav__item-link">
+                            О компании
+                        </a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="delivery.php" class="nav__item-link">
+                            Доставка и оплата
+                        </a>
+                    </div>
+                    <div class="nav__item active">
+                        <a href="guarantee.php" class="nav__item-link ">
+                            Гарантии и возврат
+                        </a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="contacts.php" class="nav__item-link">
+                            Контакты
+                        </a>
+                    </div>
                 </nav>
             </div>
             <!-- END left -->

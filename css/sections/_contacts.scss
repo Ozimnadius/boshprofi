@@ -5,15 +5,27 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 35px;
+    @include lg-block {
+      @include row-flex;
+    };
   }
 }
 .contact {
+  @include lg-block {
+    @include col;
+    @include size-lg(8);
+    margin-right: 0;
+  };
+
   margin-right: 75px;
 
   &:last-child {
     margin-right: 0;
   }
   &__title {
+    @include lg-block {
+      font-size: 20px;
+    };
     color: #222222;
     font-size: 24px;
     font-weight: 700;
@@ -36,10 +48,20 @@
 
 
 #map {
+  @include lg-block {
+    height: 320px;
+  };
   height: 480px;
 }
 
 .scheme {
+
+  .container {
+    @include sm-block {
+      padding: 0;
+    };
+  }
+
   &__title {
     background: #ffffff;
     margin-bottom: 30px;
@@ -54,11 +76,23 @@
   }
 
   &__container {
+    @include lg-block {
+      padding: 30px;
+    };
+    @include sm-block {
+      padding: 10px;
+    };
     background-color: #f2f2f2;
     padding: 40px;
   }
 
   &__map {
+    @include lg-block {
+      padding-bottom: 120px;
+    };
+    @include sm-block {
+      padding-bottom: 200px;
+    };
     position: relative;
     border-bottom: 1px solid #cdd1d4;
     padding-bottom: 45px;
@@ -70,18 +104,46 @@
   }
 
   &__img {
+    @include lg-block {
+      display: none;
+    };
+    @include sm-block {
+      display: none;
+    };
+
 
     &_tablet, &_mobile {
       display: none;
     }
+
+    &_tablet {
+      @include lg-block {
+        display: block;
+      };
+      @include sm-block {
+        display: none;
+      };
+    }
+    &_mobile {
+      @include sm-block {
+        display: block;
+      };
+    }
   }
 
   &__contacts {
+    @include lg-block {
+      bottom: 35px;
+    };
     position: absolute;
     bottom: 45px;
     left: 0;
   }
   &__phones {
+    @include sm-block {
+      font-size: 14px;
+      margin-bottom: 20px;
+    };
     color: #222222;
     letter-spacing: 0.4px;
     font-size: 20px;
@@ -103,6 +165,9 @@
   }
 
   &__address {
+    @include sm-block {
+      font-size: 16px;
+    };
     color: #222222;
     font-size: 24px;
     font-weight: 700;
@@ -125,11 +190,15 @@
       margin-bottom: 20px;
     }
     &-svg {
+      min-width: 22px;
       height: 32px;
       fill: #249f7f;
       margin-right: 10px;
     }
     &-text {
+      @include sm-block {
+        font-size: 18px;
+      };
       color: #249f7f;
       font-size: 24px;
       font-weight: 900;
@@ -175,7 +244,18 @@
   &__item {
     @include col;
     @include size(8);
+    @include size-lg(12);
+    @include size-sm(24);
+    @include sm-block {
+      text-align: center;
+    };
     margin-bottom: 40px;
+
+    &:last-child {
+      @include sm-block {
+        margin-bottom: 0;
+      };
+    }
 
     &-title {
       color: #222222;

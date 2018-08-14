@@ -358,6 +358,40 @@ $(function () {
         popup.toggleClass('active');
     });
 
+    $('.mmenu__button').on('click', function (e) {
+        var button = $(this),
+            mmenu = $('.mmenu');
+
+        mmenu.addClass('open');
+    });
+
+    $('body').on('click', '.mmenu', function (e) {
+        var mmenu = $(this);
+        if ($(e.target).hasClass('mmenu')) {
+            mmenu.removeClass('open');
+        }
+    });
+    
+    $('.mmenu__close').on('click', function () {
+        var mmenu = $(this).closest('.mmenu');
+        mmenu.removeClass('open');
+    });
+    
+    $('.mmenu__item-link').on('click', function (e) {
+
+        var link = $(this),
+            href = link.attr('href'),
+            item = link.closest('.mmenu__item'),
+            drop = item.find('.mmenu-2');
+
+        if (drop.length>0) {
+            e.preventDefault();
+            item.toggleClass('open');
+            drop.slideToggle(300);
+        }
+
+    });
+
 
     /*CABINET*/
     $('.profile__svg').on('mouseover', function (e) {

@@ -64,9 +64,20 @@
 .profile {
 
   &__form {
+    @include lg-block {
+      display: none;
+    };
     border-bottom: 1px solid #ddd;
     padding-bottom: 15px;
     margin-bottom: 35px;
+
+    &_lg {
+      display: none;
+
+      @include lg-block {
+        display: block;
+      };
+    }
 
     &:last-child {
       border-bottom: none;
@@ -77,15 +88,20 @@
   &__left {
     @include col;
     @include size(16);
+    @include size-lg(12);
+    @include size-sm(24);
   }
   &__right {
     @include col;
     @include size(8);
+    @include size-lg(12);
+    @include size-sm(24);
   }
 
   &__block {
     @include col;
     @include size(12);
+    @include size-lg(24);
 
     &_100 {
       @include size(24);
@@ -126,6 +142,10 @@
   }
 
   &__submit {
+    @include lg-block {
+      margin: 0 auto;
+      margin-bottom: 13px;
+    };
     width: 242px;
     height: 48px;
     margin: 0;
@@ -133,10 +153,20 @@
     margin-bottom: 13px;
 
     &_2 {
+      @include lg-block {
+        margin: 0 auto;
+      };
+      @include sm-block {
+        margin-top: 30px;
+      };
       margin: 0;
     }
   }
   &__links {
+    @include lg-block {
+      width: 100%;
+    };
+
     width: 242px;
     text-align: center;
 
@@ -160,10 +190,24 @@
     &-number {
       @include col;
       @include size(6);
+      @include size-sm(24);
     }
     &-date, &-count, &-sum, &-status{
       @include col;
       @include size(4);
+      @include sm-block {
+        display: none;
+      };
+
+      &-sm {
+        @include col;
+        @include size-sm(24);
+        @include sm-block {
+          display: block;
+        };
+
+        display: none;
+      }
     }
     &-sum {
       @include shift-right(2);
@@ -172,19 +216,30 @@
       @include col;
       @include size(8);
       @include shift-right(2);
+      @include size-sm(24);
+      @include shift-sm-right(0);
     }
     &-price {
       @include col;
       @include size(4);
+      @include sm-block {
+        display: none;
+      };
     }
   }
 
   &__head {
+    @include sm-block {
+      padding: 25px 20px;
+    };
     padding: 25px 0;
     border-bottom: 1px solid #249f7f;
   }
 
   &__th {
+    @include sm-block {
+      text-align: left;
+    };
     color: rgba($text, .5);
     font-size: 14px;
     text-align: center;
@@ -212,21 +267,45 @@
   }
 
   &__td {
+    @include lg-block {
+      padding-left: 0;
+      padding-right: 0;
+    };
+    @include sm-block {
+      padding: 15px 20px;
+    };
     padding: 27px 10px;
   }
 
   &__number {
+    @include lg-block {
+      padding-left: 20px;
+    };
+    @include sm-block {
+      width: 100%;
+      justify-content: space-between;
+      padding-left: 0;
+    };
     display: flex;
     align-items: center;
     padding-left: 60px;
 
     &-svg {
+      @include sm-block {
+        order: 1;
+      };
       width: 15px;
       fill: #249f7f;
       margin-right: 8px;
       transition: .3s;
     }
     &-text {
+      @include lg-block {
+        font-size: 14px;
+      };
+      @include sm-block {
+        font-size: 18px;
+      };
       color: #249f7f;
       font-size: 18px;
       font-weight: 700;
@@ -234,10 +313,16 @@
   }
 
   &__date, &__count {
+    @include sm-block {
+      text-align: left;
+    };
     text-align: center;
   }
 
   &__sum, &__price {
+    @include sm-block {
+      text-align: left;
+    };
     color: #ed1c24;
     font-weight: 500;
     letter-spacing: 0.32px;
@@ -245,6 +330,9 @@
   }
 
   &__status {
+    @include sm-block {
+      text-align: left;
+    };
     color: #249f7f;
     font-weight: 500;
     letter-spacing: 0.32px;
@@ -255,6 +343,9 @@
   }
 
   &__product {
+    @include sm-block {
+      padding-left: 0px;
+    };
     display: block;
     color: #222222;
     line-height: 1.375;
@@ -266,11 +357,24 @@
     display: none;
     background-color: #f5f5f5;
 
+    .row {
+      @include sm-block {
+        flex-direction: column;
+      };
+    }
+
+    .history__td {
+      padding: 10px 20px;
+    }
+
     &-th {
       @extend .history__th;
       margin-bottom: 13px;
 
       &_left-product {
+        @include sm-block {
+          padding-left: 0;
+        };
         text-align: left;
         padding-left: 60px;
       }
@@ -286,6 +390,8 @@
   &__items {
     @include col;
     @include size(8);
+    @include size-md(12);
+    @include size-sm(24);
     display: flex;
     flex-direction: column;
     margin-bottom: 35px;

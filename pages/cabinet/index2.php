@@ -35,7 +35,7 @@
 
             <!-- switches -->
             <div class="switches">
-                <a href="#tab1" class="switch">
+                <a href="#tab1" class="switch active">
                     Профиль
                 </a>
                 <a href="#tab2" class="switch">
@@ -47,7 +47,7 @@
                 <a href="#tab4" class="switch">
                     История заказов
                 </a>
-                <a href="#tab5" class="switch active">
+                <a href="#tab5" class="switch">
                     Документы
                 </a>
 
@@ -56,7 +56,7 @@
 
             <!-- tabs -->
             <div class="tabs">
-                <div class="tab" id="tab1">
+                <div class="tab active" id="tab1">
                     <div class="profile tab__content">
                         <!-- form1 -->
                         <form action="" method="post" class="profile__form">
@@ -128,6 +128,85 @@
                                     </div>
                                 </div>
                                 <!-- END right -->
+                            </div>
+                        </form>
+
+                        <form action="" method="post" class="profile__form profile__form_lg">
+                            <div class="row">
+                                <!-- left -->
+                                <div class="profile__left">
+                                    <div class="row">
+                                        <div class="profile__block">
+                                            <label class="profile__label">
+                                                Имя
+                                            </label>
+                                            <input type="text" name="name" class="profile__input input"
+                                                   placeholder="Иван">
+                                        </div>
+                                        <div class="profile__block">
+                                            <label class="profile__label">
+                                                Фамилия
+                                            </label>
+                                            <input type="text" name="surname" class="profile__input input"
+                                                   placeholder="Иванов">
+                                        </div>
+                                        <div class="profile__block">
+                                            <label class="profile__label">
+                                                Отчество
+                                            </label>
+                                            <input type="text" name="thirdname" class="profile__input input"
+                                                   placeholder="Иванович">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END left -->
+
+                                <!-- right -->
+                                <div class="profile__right">
+                                    <div class="row">
+                                        <div class="profile__block">
+                                            <label class="profile__label">
+                                                E-mail адрес
+                                            </label>
+                                            <input type="email" name="email" class="profile__input input"
+                                                   placeholder="ivanov@mail.com">
+                                        </div>
+                                        <div class="profile__block">
+                                            <label class="profile__label">
+                                                Новый пароль
+                                            </label>
+                                            <input type="password" name="password"
+                                                   class="profile__input profile__input_password input"
+                                                   placeholder="**********">
+                                            <svg class="profile__svg" viewBox="0 0 23.02 15">
+                                                <use xlink:href="images/icons/sprite.svg#eye"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="profile__block">
+                                            <label class="profile__label">
+                                                Подтверждение нового пароля
+                                            </label>
+                                            <input type="password" name="new_password"
+                                                   class="profile__input profile__input_password input"
+                                                   placeholder="**********">
+                                            <svg class="profile__svg" viewBox="0 0 23.02 15">
+                                                <use xlink:href="images/icons/sprite.svg#eye"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END right -->
+
+                                <!-- block -->
+                                <div class="profile__block">
+                                    <input type="submit" value="Сохранить" class="profile__submit button">
+                                    <div class="profile__links">
+                                        <a href="" class="profile__link">Выйти </a>
+                                        <span class="profile__seporator"> / </span>
+                                        <a href="" class="profile__link">Удалить аккаунт</a>
+                                    </div>
+                                </div>
+                                <!-- END block -->
                             </div>
                         </form>
                         <!-- END form1 -->
@@ -283,6 +362,177 @@
                                            class="profile__submit profile__submit_2 button">
                                 </div>
                                 <!-- END left -->
+                            </div>
+                        </form>
+
+                        <form action="" method="post" class="profile__form profile__form_lg">
+                            <div class="row">
+
+                                <div class="profile__block profile__block_100">
+                                    <label class="profile__label">
+                                        Полное наименование предприятия
+                                    </label>
+                                    <input type="text" name="" class="profile__input input"
+                                           placeholder="Полное наименование предприятия">
+                                </div>
+
+                                <!-- left -->
+                                <div class="profile__left">
+                                    <div class="row">
+                                        <div class="profile__block">
+                                            <label class="profile__label">
+                                                Краткое наименование предприятия
+                                            </label>
+                                            <input type="text" name="" class="profile__input input"
+                                                   placeholder="Краткое наименование предприятия">
+                                        </div>
+
+                                        <div class="profile__block">
+                                            <label class="profile__label">
+                                                КПП
+                                            </label>
+                                            <input type="text" name="" class="profile__input input"
+                                                   placeholder="КПП">
+                                        </div>
+
+                                        <div class="profile__block">
+                                            <label class="profile__label">
+                                                ОКПО
+                                            </label>
+                                            <input type="text" name="" class="profile__input input"
+                                                   placeholder="ОКПО">
+                                        </div>
+
+                                        <div class="profile__block">
+                                            <label class="profile__label">
+                                                ОГРН
+                                            </label>
+                                            <input type="text" name="" class="profile__input input"
+                                                   placeholder="ОГРН">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- END left -->
+
+                                <!-- right -->
+                                <div class="profile__right">
+                                    <div class="row">
+                                        <div class="profile__block">
+                                            <label class="profile__label">
+                                                ИНН
+                                            </label>
+                                            <input type="text" name="" class="profile__input input"
+                                                   placeholder="ИНН">
+                                        </div>
+                                        <div class="profile__block">
+                                            <label class="profile__label">
+                                                ОКТМО
+                                            </label>
+                                            <input type="text" name="" class="profile__input input"
+                                                   placeholder="ОКТМО">
+                                        </div>
+                                        <div class="profile__block">
+                                            <label class="profile__label">
+                                                ОКВЭД
+                                            </label>
+                                            <input type="text" name="" class="profile__input input"
+                                                   placeholder="ОКВЭД">
+                                        </div>
+                                        <div class="profile__block">
+                                            <label class="profile__label">
+                                                БИК
+                                            </label>
+                                            <input type="text" name="" class="profile__input input"
+                                                   placeholder="БИК">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END right -->
+
+                                <div class="profile__block profile__block_100">
+                                    <label class="profile__label">
+                                        Юридический адрес
+                                    </label>
+                                    <input type="text" name="" class="profile__input input"
+                                           placeholder="Юридический адрес">
+                                </div>
+                                <div class="profile__block profile__block_100">
+                                    <label class="profile__label">
+                                        Почтовый адрес
+                                    </label>
+                                    <input type="text" name="" class="profile__input input"
+                                           placeholder="Почтовый адрес">
+                                </div>
+
+                                <!-- left -->
+                                <div class="profile__left">
+                                    <div class="row">
+                                        <div class="profile__block profile__block_100">
+                                            <label class="profile__label">
+                                                Генеральный директор
+                                            </label>
+                                            <input type="text" name="" class="profile__input input"
+                                                   placeholder="Генеральный директор">
+                                        </div>
+                                        <div class="profile__block profile__block_100">
+                                            <label class="profile__label">
+                                                Название банка
+                                            </label>
+                                            <input type="text" name="" class="profile__input input"
+                                                   placeholder="Название банка">
+                                        </div>
+                                        <div class="profile__block profile__block_100">
+                                            <label class="profile__label">
+                                                Корреспондентский счет
+                                            </label>
+                                            <input type="text" name="" class="profile__input input"
+                                                   placeholder="Корреспондентский счет">
+                                        </div>
+                                        <div class="profile__block profile__block_100">
+                                            <label class="profile__label">
+                                                Телефон 2
+                                            </label>
+                                            <input type="text" name="" class="profile__input input"
+                                                   placeholder="Телефон 2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END left -->
+
+                                <!-- right -->
+                                <div class="profile__right">
+                                    <div class="row">
+                                        <div class="profile__block profile__block_100">
+                                            <label class="profile__label">
+                                                Электронная почта
+                                            </label>
+                                            <input type="text" name="" class="profile__input input"
+                                                   placeholder="ivanov@mail.com">
+                                        </div>
+                                        <div class="profile__block profile__block_100">
+                                            <label class="profile__label">
+                                                Расчетный счет
+                                            </label>
+                                            <input type="text" name="" class="profile__input input"
+                                                   placeholder="Расчетный счет">
+                                        </div>
+                                        <div class="profile__block profile__block_100">
+                                            <label class="profile__label">
+                                                Телефон 1
+                                            </label>
+                                            <input type="text" name="" class="profile__input input"
+                                                   placeholder="Телефон 1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END right -->
+
+                                <div class="profile__block">
+                                    <input type="submit" value="Сохранить изменения"
+                                           class="profile__submit profile__submit_2 button">
+                                </div>
+
                             </div>
                         </form>
                         <!-- END form2 -->
@@ -871,7 +1121,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab active" id="tab5">
+                <div class="tab" id="tab5">
                     <div class="tab__content">
                         <div class="docs">
                             <div class="row">

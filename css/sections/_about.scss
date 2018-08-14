@@ -11,6 +11,16 @@
 
   &__img {
     margin-bottom: 25px;
+
+    &_bg {
+      @include lg-block {
+        height: 255px;
+      };
+      @include sm-block {
+        height: 165px;
+      };
+      height: 285px;
+    }
   }
 
   &__pic {
@@ -20,14 +30,19 @@
   &__left {
     @include col;
     @include size(14);
+    @include size-lg(12);
+    @include size-sm(24);
   }
   &__right {
     @include col;
     @include size(10);
+    @include size-lg(12);
+    @include size-sm(24);
   }
 
   &__left-2, &__right-2 {
     @include col;
     @include size(12);
+    @include size-sm(24);
   }
 }
