@@ -298,45 +298,6 @@
   }
 }
 
-.search {
-
-  &__form {
-    position: relative;
-  }
-
-  &__input {
-    width: 100%;
-    border-radius: 2px;
-    background-color: rgba(#ffffff, .85);
-    border: none;
-    padding: 10px 25px 10px 15px;
-
-    color: #333333;
-    font-size: 14px;
-    font-weight: 500;
-
-    font-family: inherit;
-
-    &::placeholder {
-      color: #333333;
-      font-size: 14px;
-      font-weight: 500;
-    }
-  }
-
-  &__submit {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    margin-top: -7px;
-  }
-
-  &__svg {
-    height: 14px;
-    fill: #333333;
-  }
-}
-
 .label {
   width: 100%;
   display: block;

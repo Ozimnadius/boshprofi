@@ -109,6 +109,13 @@ $(function () {
 
     /*END BASKET*/
 
+    $('body').on('click', function (e) {
+
+        if($(e.target).closest('.search').length == 0) {
+            $('.search__drop').removeClass('active');
+        }
+    });
+
     $('body').on('change', '.accept__check', function () {
 
         var check = $(this),
@@ -391,6 +398,72 @@ $(function () {
         }
 
     });
+
+    $('.search__form').on('submit', function (e) {
+        e.preventDefault();
+        var $this = $(this),
+            search = $this.closest('.search'),
+            val = $this.find('.search__input').val(),
+            drop = search.find('.search__drop'),
+            data = {
+                action: 'search',
+                val: val
+            };
+
+        if(!val) {
+            drop.removeClass('active');
+            return;
+        }
+
+        $.ajax({
+            dataType: "json",
+            type: "POST",
+            url: 'ajax.php',
+            data: data,
+            success: function (result) {
+                if (result.status) {
+                    drop.html(result.html);
+                    drop.addClass('active');
+                } else {
+                    alert('Что-то пошло не так, попробуйте еще раз!!!');
+                }
+            },
+            error: function (result) {
+                alert('Что-то пошло не так, попробуйте еще раз!!!');
+            }
+        });
+    });
+
+    // $('.search__input').on('input', function (e) {
+    //
+    //     var $this = $(this),
+    //         search = $this.closest('.search'),
+    //         val = $this.val(),
+    //         drop = search.find('.search__drop'),
+    //         data = {
+    //             action: 'search',
+    //             val: val
+    //         };
+    //
+    //     $.ajax({
+    //         dataType: "json",
+    //         type: "POST",
+    //         url: 'ajax.php',
+    //         data: data,
+    //         success: function (result) {
+    //             if (result.status) {
+    //                 drop.html(result.html);
+    //                 drop.addClass('active');
+    //             } else {
+    //                 alert('Что-то пошло не так, попробуйте еще раз!!!');
+    //             }
+    //         },
+    //         error: function (result) {
+    //             alert('Что-то пошло не так, попробуйте еще раз!!!');
+    //         }
+    //     });
+    //
+    // });
 
 
     /*CABINET*/

@@ -58,6 +58,10 @@
                             </svg>
                         </button>
                     </form>
+
+                    <div class="search__drop">
+
+                    </div>
                 </div>
             </div>
             <!-- END right -->

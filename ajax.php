@@ -36,7 +36,13 @@ switch ($action) {
         ));
         exit();
         break;
-
+    case 'search':
+        echo json_encode(array(
+            'status' => true,
+            'html' => searchResult()
+        ));
+        exit();
+        break;
     default:
         echo json_encode(array(
             'status' => false,
@@ -96,5 +102,101 @@ function callorderForm()
     ob_end_clean();
     return $html;
 }
+
+function searchResult()
+{
+    ob_start();
+    ?>
+    <a href="category.php" class="search__title">
+        Перфораторы с патроном SDS-plus
+    </a>
+    <div class="search__list">
+        <a href="product.php" class="search__item">
+                                <span class="search__item-img">
+                                    <img src="images/content/catalog/catalog-item1.png" alt="" class="catalog__item-pic">
+                                </span>
+            <span class="search__item-desc">
+                                    <span class="search__item-text">
+                                         GBH 2-20 D
+                                    </span>
+                                    <span class="search__item-price">
+                                        7 966 руб.
+                                    </span>
+                                </span>
+        </a>
+        <a href="product.php" class="search__item">
+                                <span class="search__item-img">
+                                    <img src="images/content/catalog/catalog-item1.png" alt="" class="catalog__item-pic">
+                                </span>
+            <span class="search__item-desc">
+                                    <span class="search__item-text">
+                                         GBH 2-20 D
+                                    </span>
+                                    <span class="search__item-price">
+                                        7 966 руб.
+                                    </span>
+                                </span>
+        </a>
+        <a href="product.php" class="search__item">
+                                <span class="search__item-img">
+                                    <img src="images/content/catalog/catalog-item1.png" alt="" class="catalog__item-pic">
+                                </span>
+            <span class="search__item-desc">
+                                    <span class="search__item-text">
+                                         GBH 2-20 D
+                                    </span>
+                                    <span class="search__item-price">
+                                        7 966 руб.
+                                    </span>
+                                </span>
+        </a>
+        <a href="product.php" class="search__item">
+                                <span class="search__item-img">
+                                    <img src="images/content/catalog/catalog-item1.png" alt="" class="catalog__item-pic">
+                                </span>
+            <span class="search__item-desc">
+                                    <span class="search__item-text">
+                                         GBH 2-20 D
+                                    </span>
+                                    <span class="search__item-price">
+                                        7 966 руб.
+                                    </span>
+                                </span>
+        </a>
+        <a href="product.php" class="search__item">
+                                <span class="search__item-img">
+                                    <img src="images/content/catalog/catalog-item1.png" alt="" class="catalog__item-pic">
+                                </span>
+            <span class="search__item-desc">
+                                    <span class="search__item-text">
+                                         GBH 2-20 D
+                                    </span>
+                                    <span class="search__item-price">
+                                        7 966 руб.
+                                    </span>
+                                </span>
+        </a>
+        <a href="product.php" class="search__item">
+                                <span class="search__item-img">
+                                    <img src="images/content/catalog/catalog-item1.png" alt="" class="catalog__item-pic">
+                                </span>
+            <span class="search__item-desc">
+                                    <span class="search__item-text">
+                                         GBH 2-20 D
+                                    </span>
+                                    <span class="search__item-price">
+                                        7 966 руб.
+                                    </span>
+                                </span>
+        </a>
+
+    </div>
+    <?
+    $html = ob_get_contents();
+    ob_end_clean();
+    return $html;
+}
+
+
 
 ?>
