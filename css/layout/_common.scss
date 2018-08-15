@@ -126,6 +126,14 @@
   text-transform: uppercase;
   letter-spacing: 0.48px;
   margin-bottom: 10px;
+  display: block;
+  
+  &_fixed {
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
 }
 
 .email {

@@ -604,12 +604,31 @@ $(function () {
     $(window).on('scroll', function () {
         var currScroll = $(window).scrollTop();
 
+        console.log(currScroll);
+
         if (currScroll > 200) {
             $('.scrollTop').addClass('active');
         }
         else {
             $('.scrollTop').removeClass('active');
         }
+
+        var scrollTop = 250;
+
+        if($(window).width()>1199.99) {
+            scrollTop = 250;
+        } else if ($(window).width()>767.99) {
+            scrollTop = 140;
+        } else {
+            scrollTop = 130;
+        }
+
+        if (currScroll > scrollTop) {
+            $('.header-fixed').addClass('active');
+        } else {
+            $('.header-fixed').removeClass('active');
+        }
+
 
         nextScroll = currScroll;
     });
