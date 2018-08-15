@@ -472,72 +472,7 @@
                                     <div class="history__item-wrapper">
                                         <div class="row">
                                             <div class="history__td history__w-number">
-                                                <button type="button" class="history__number">
-                                                    <svg class="history__number-svg" viewBox="0 0 15 8"">
-                                                    <use xlink:href="images/icons/sprite.svg#arrow-down"></use>
-                                                    </svg>
-                                                    <div class="history__number-text">
-                                                        Заказ №12345
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div class="history__td history__w-date">
-                                                <div class="history__date">
-                                                    26. 07 .2018
-                                                </div>
-                                            </div>
-                                            <div class="history__td history__w-count">
-                                                <div class="history__count">
-                                                    2 шт.
-                                                </div>
-                                            </div>
-                                            <div class="history__td history__w-sum">
-                                                <div class="history__sum">
-                                                    15 900 руб
-                                                </div>
-                                            </div>
-                                            <div class="history__td history__w-status">
-                                                <div class="history__status history__status_unpaid">
-                                                    Не оплачен
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="history__item-hidden history__hidden">
-                                        <div class="row">
-                                            <div class="history__td history__w-product">
-                                                <div class="history__hidden-th history__hidden-th_left-product">
-                                                    Товар
-                                                </div>
-                                                <a href="" class="history__product">
-                                                    Аккумуляторная дрель-шуруповёрт
-                                                    Bosch GSR 140-LI
-                                                </a>
-                                            </div>
-                                            <div class="history__td history__w-count">
-                                                <div class="history__hidden-th">
-                                                    Количество
-                                                </div>
-                                                <div class="history__count">
-                                                    2 шт.
-                                                </div>
-                                            </div>
-                                            <div class="history__td history__w-price">
-                                                <div class="history__hidden-th">
-                                                    Цена
-                                                </div>
-                                                <div class="history__price">
-                                                    7 900 руб
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="history__item">
-                                    <div class="history__item-wrapper">
-                                        <div class="row">
-                                            <div class="history__td history__w-number">
-                                                <button type="button" class="history__number">
+                                                <button class="history__number">
                                                     <svg class="history__number-svg" viewBox="0 0 15 8"">
                                                     <use xlink:href="images/icons/sprite.svg#arrow-down"></use>
                                                     </svg>
@@ -579,12 +514,36 @@
                                                     Bosch GSR 140-LI
                                                 </a>
                                             </div>
+                                            <div class="history__td history__w-date-sm">
+                                                <div class="history__hidden-th">
+                                                    Дата
+                                                </div>
+                                                <div class="history__date">
+                                                    26. 07 .2018
+                                                </div>
+                                            </div>
+                                            <div class="history__td history__w-count-sm">
+                                                <div class="history__hidden-th">
+                                                    Количество
+                                                </div>
+                                                <div class="history__count">
+                                                    2 шт.
+                                                </div>
+                                            </div>
                                             <div class="history__td history__w-count">
                                                 <div class="history__hidden-th">
                                                     Количество
                                                 </div>
                                                 <div class="history__count">
                                                     2 шт.
+                                                </div>
+                                            </div>
+                                            <div class="history__td history__w-sum-sm">
+                                                <div class="history__hidden-th">
+                                                    Сумма
+                                                </div>
+                                                <div class="history__sum">
+                                                    15 900 руб
                                                 </div>
                                             </div>
                                             <div class="history__td history__w-price">
@@ -595,6 +554,14 @@
                                                     7 900 руб
                                                 </div>
                                             </div>
+                                            <div class="history__td history__w-status-sm">
+                                                <div class="history__hidden-th">
+                                                    Статус
+                                                </div>
+                                                <div class="history__status">
+                                                    Оплачен
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -602,7 +569,7 @@
                                     <div class="history__item-wrapper">
                                         <div class="row">
                                             <div class="history__td history__w-number">
-                                                <button type="button" class="history__number">
+                                                <button class="history__number">
                                                     <svg class="history__number-svg" viewBox="0 0 15 8"">
                                                     <use xlink:href="images/icons/sprite.svg#arrow-down"></use>
                                                     </svg>
@@ -644,12 +611,36 @@
                                                     Bosch GSR 140-LI
                                                 </a>
                                             </div>
+                                            <div class="history__td history__w-date-sm">
+                                                <div class="history__hidden-th">
+                                                    Дата
+                                                </div>
+                                                <div class="history__date">
+                                                    26. 07 .2018
+                                                </div>
+                                            </div>
+                                            <div class="history__td history__w-count-sm">
+                                                <div class="history__hidden-th">
+                                                    Количество
+                                                </div>
+                                                <div class="history__count">
+                                                    2 шт.
+                                                </div>
+                                            </div>
                                             <div class="history__td history__w-count">
                                                 <div class="history__hidden-th">
                                                     Количество
                                                 </div>
                                                 <div class="history__count">
                                                     2 шт.
+                                                </div>
+                                            </div>
+                                            <div class="history__td history__w-sum-sm">
+                                                <div class="history__hidden-th">
+                                                    Сумма
+                                                </div>
+                                                <div class="history__sum">
+                                                    15 900 руб
                                                 </div>
                                             </div>
                                             <div class="history__td history__w-price">
@@ -660,6 +651,14 @@
                                                     7 900 руб
                                                 </div>
                                             </div>
+                                            <div class="history__td history__w-status-sm">
+                                                <div class="history__hidden-th">
+                                                    Статус
+                                                </div>
+                                                <div class="history__status">
+                                                    Оплачен
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -667,7 +666,7 @@
                                     <div class="history__item-wrapper">
                                         <div class="row">
                                             <div class="history__td history__w-number">
-                                                <button type="button" class="history__number">
+                                                <button class="history__number">
                                                     <svg class="history__number-svg" viewBox="0 0 15 8"">
                                                     <use xlink:href="images/icons/sprite.svg#arrow-down"></use>
                                                     </svg>
@@ -709,12 +708,36 @@
                                                     Bosch GSR 140-LI
                                                 </a>
                                             </div>
+                                            <div class="history__td history__w-date-sm">
+                                                <div class="history__hidden-th">
+                                                    Дата
+                                                </div>
+                                                <div class="history__date">
+                                                    26. 07 .2018
+                                                </div>
+                                            </div>
+                                            <div class="history__td history__w-count-sm">
+                                                <div class="history__hidden-th">
+                                                    Количество
+                                                </div>
+                                                <div class="history__count">
+                                                    2 шт.
+                                                </div>
+                                            </div>
                                             <div class="history__td history__w-count">
                                                 <div class="history__hidden-th">
                                                     Количество
                                                 </div>
                                                 <div class="history__count">
                                                     2 шт.
+                                                </div>
+                                            </div>
+                                            <div class="history__td history__w-sum-sm">
+                                                <div class="history__hidden-th">
+                                                    Сумма
+                                                </div>
+                                                <div class="history__sum">
+                                                    15 900 руб
                                                 </div>
                                             </div>
                                             <div class="history__td history__w-price">
@@ -725,6 +748,14 @@
                                                     7 900 руб
                                                 </div>
                                             </div>
+                                            <div class="history__td history__w-status-sm">
+                                                <div class="history__hidden-th">
+                                                    Статус
+                                                </div>
+                                                <div class="history__status">
+                                                    Оплачен
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -732,7 +763,7 @@
                                     <div class="history__item-wrapper">
                                         <div class="row">
                                             <div class="history__td history__w-number">
-                                                <button type="button" class="history__number">
+                                                <button class="history__number">
                                                     <svg class="history__number-svg" viewBox="0 0 15 8"">
                                                     <use xlink:href="images/icons/sprite.svg#arrow-down"></use>
                                                     </svg>
@@ -774,70 +805,21 @@
                                                     Bosch GSR 140-LI
                                                 </a>
                                             </div>
-                                            <div class="history__td history__w-count">
+                                            <div class="history__td history__w-date-sm">
                                                 <div class="history__hidden-th">
-                                                    Количество
+                                                    Дата
                                                 </div>
-                                                <div class="history__count">
-                                                    2 шт.
-                                                </div>
-                                            </div>
-                                            <div class="history__td history__w-price">
-                                                <div class="history__hidden-th">
-                                                    Цена
-                                                </div>
-                                                <div class="history__price">
-                                                    7 900 руб
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="history__item">
-                                    <div class="history__item-wrapper">
-                                        <div class="row">
-                                            <div class="history__td history__w-number">
-                                                <button type="button" class="history__number">
-                                                    <svg class="history__number-svg" viewBox="0 0 15 8"">
-                                                    <use xlink:href="images/icons/sprite.svg#arrow-down"></use>
-                                                    </svg>
-                                                    <div class="history__number-text">
-                                                        Заказ №12345
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div class="history__td history__w-date">
                                                 <div class="history__date">
                                                     26. 07 .2018
                                                 </div>
                                             </div>
-                                            <div class="history__td history__w-count">
+                                            <div class="history__td history__w-count-sm">
+                                                <div class="history__hidden-th">
+                                                    Количество
+                                                </div>
                                                 <div class="history__count">
                                                     2 шт.
                                                 </div>
-                                            </div>
-                                            <div class="history__td history__w-sum">
-                                                <div class="history__sum">
-                                                    15 900 руб
-                                                </div>
-                                            </div>
-                                            <div class="history__td history__w-status">
-                                                <div class="history__status">
-                                                    Оплачен
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="history__item-hidden history__hidden">
-                                        <div class="row">
-                                            <div class="history__td history__w-product">
-                                                <div class="history__hidden-th history__hidden-th_left-product">
-                                                    Товар
-                                                </div>
-                                                <a href="" class="history__product">
-                                                    Аккумуляторная дрель-шуруповёрт
-                                                    Bosch GSR 140-LI
-                                                </a>
                                             </div>
                                             <div class="history__td history__w-count">
                                                 <div class="history__hidden-th">
@@ -845,6 +827,14 @@
                                                 </div>
                                                 <div class="history__count">
                                                     2 шт.
+                                                </div>
+                                            </div>
+                                            <div class="history__td history__w-sum-sm">
+                                                <div class="history__hidden-th">
+                                                    Сумма
+                                                </div>
+                                                <div class="history__sum">
+                                                    15 900 руб
                                                 </div>
                                             </div>
                                             <div class="history__td history__w-price">
@@ -855,69 +845,12 @@
                                                     7 900 руб
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="history__item">
-                                    <div class="history__item-wrapper">
-                                        <div class="row">
-                                            <div class="history__td history__w-number">
-                                                <button type="button" class="history__number">
-                                                    <svg class="history__number-svg" viewBox="0 0 15 8"">
-                                                    <use xlink:href="images/icons/sprite.svg#arrow-down"></use>
-                                                    </svg>
-                                                    <div class="history__number-text">
-                                                        Заказ №12345
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div class="history__td history__w-date">
-                                                <div class="history__date">
-                                                    26. 07 .2018
+                                            <div class="history__td history__w-status-sm">
+                                                <div class="history__hidden-th">
+                                                    Статус
                                                 </div>
-                                            </div>
-                                            <div class="history__td history__w-count">
-                                                <div class="history__count">
-                                                    2 шт.
-                                                </div>
-                                            </div>
-                                            <div class="history__td history__w-sum">
-                                                <div class="history__sum">
-                                                    15 900 руб
-                                                </div>
-                                            </div>
-                                            <div class="history__td history__w-status">
                                                 <div class="history__status">
                                                     Оплачен
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="history__item-hidden history__hidden">
-                                        <div class="row">
-                                            <div class="history__td history__w-product">
-                                                <div class="history__hidden-th history__hidden-th_left-product">
-                                                    Товар
-                                                </div>
-                                                <a href="" class="history__product">
-                                                    Аккумуляторная дрель-шуруповёрт
-                                                    Bosch GSR 140-LI
-                                                </a>
-                                            </div>
-                                            <div class="history__td history__w-count">
-                                                <div class="history__hidden-th">
-                                                    Количество
-                                                </div>
-                                                <div class="history__count">
-                                                    2 шт.
-                                                </div>
-                                            </div>
-                                            <div class="history__td history__w-price">
-                                                <div class="history__hidden-th">
-                                                    Цена
-                                                </div>
-                                                <div class="history__price">
-                                                    7 900 руб
                                                 </div>
                                             </div>
                                         </div>

@@ -190,6 +190,7 @@
     &-number {
       @include col;
       @include size(6);
+      @include size-lg(8);
       @include size-sm(24);
     }
     &-date, &-count, &-sum, &-status{
@@ -211,6 +212,7 @@
     }
     &-sum {
       @include shift-right(2);
+      @include shift-lg-right(0);
     }
     &-product {
       @include col;
@@ -301,10 +303,10 @@
     }
     &-text {
       @include lg-block {
-        font-size: 14px;
+        //font-size: 14px;
       };
       @include sm-block {
-        font-size: 18px;
+        //font-size: 18px;
       };
       color: #249f7f;
       font-size: 18px;

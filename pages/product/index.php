@@ -40,7 +40,7 @@
     <!-- END breadcrumbs -->
 
     <!-- product -->
-    <section class="product">
+    <section class="product jsItem" data-id="22">
         <div class="container">
             <!-- title -->
             <h1 class="product__title">
@@ -251,7 +251,7 @@
 
                             <div class="product__mobile">
                                 <!-- compare -->
-                                <button type="button" class="product__compare product__compare_mobile">
+                                <button type="button" class="product__compare product__compare_mobile jsAddCompare">
                                     Добавить к сравнению
                                     <svg class="product__compare-svg" viewBox="0 0 985 861.9">
                                         <use xlink:href="images/icons/sprite.svg#text"></use>
@@ -260,7 +260,7 @@
                                 <!-- END compare -->
 
                                 <!-- favorite -->
-                                <button type="button" class="product__favorite product__favorite_mobile">
+                                <button type="button" class="product__favorite product__favorite_mobile jsAddFavorites">
                                     Добавить в избранное
                                     <svg class="product__favorite-svg" viewBox="0 0 20.22 19.27">
                                         <use xlink:href="images/icons/sprite.svg#heart"></use>
@@ -282,7 +282,7 @@
                     <!-- END buttons -->
 
                     <!-- compare -->
-                    <button type="button" class="product__compare">
+                    <button type="button" class="product__compare jsAddCompare">
                         Добавить к сравнению
                         <svg class="product__compare-svg" viewBox="0 0 985 861.9">
                             <use xlink:href="images/icons/sprite.svg#text"></use>
@@ -291,7 +291,7 @@
                     <!-- END compare -->
 
                     <!-- favorite -->
-                    <button type="button" class="product__favorite">
+                    <button type="button" class="product__favorite jsAddFavorites">
                         Добавить в избранное
                         <svg class="product__favorite-svg" viewBox="0 0 20.22 19.27">
                             <use xlink:href="images/icons/sprite.svg#heart"></use>

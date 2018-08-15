@@ -31,6 +31,9 @@
   @include lg-block {
     margin-bottom: 60px;
   };
+  @include sm-block {
+    margin-bottom: 30px;
+  };
   @include size-xs(24);
 
   display: flex;

@@ -1,5 +1,22 @@
 $(function () {
 
+    function GetNoun(number, one, two, five) {
+        number = Math.abs(number);
+        number %= 100;
+        if (number >= 5 && number <= 20) {
+            return five;
+        }
+        number %= 10;
+        if (number == 1) {
+            return one;
+        }
+        if (number >= 2 && number <= 4) {
+            return two;
+        }
+        return five;
+    }
+
+
     /*BASKET*/
     $('.count__down').on('click', function (e) {
 
@@ -93,6 +110,7 @@ $(function () {
     function calcTotal() {
         var items = $('.basket__item'),
             totalObj = $('.basket__total-val'),
+            totalCount = 0,
             total = 0;
 
         items.each(function (indx, elem) {
@@ -100,18 +118,20 @@ $(function () {
                 price = parseInt(item.data('price')),
                 count = parseInt(item.find('.count__val').val()),
                 sum = price * count;
+            totalCount += count;
             total += sum;
 
         });
 
         totalObj.text(total.toLocaleString() + ' руб');
+        refreshCart(totalCount);
     }
 
     /*END BASKET*/
 
     $('body').on('click', function (e) {
 
-        if($(e.target).closest('.search').length == 0) {
+        if ($(e.target).closest('.search').length == 0) {
             $('.search__drop').removeClass('active');
         }
     });
@@ -188,6 +208,35 @@ $(function () {
         button.toggleClass('open');
     });
 
+    $('.product__add').on('click', function (e) {
+        var $this = $(this),
+            item = $this.closest('.jsItem'),
+            id = item.data('id'),
+            data = {
+                action: 'add',
+                id: id
+            };
+
+        $.ajax({
+            dataType: "json",
+            type: "POST",
+            url: 'ajax.php',
+            data: data,
+            success: function (result) {
+                if (result.status) {
+                    $this.addClass('added');
+                    $this.find('.product__add-text').text('В корзине');
+                    addCart(1);
+                } else {
+                    alert('Что-то пошло не так, попробуйте еще раз!!!');
+                }
+            },
+            error: function (result) {
+                alert('Что-то пошло не так, попробуйте еще раз!!!');
+            }
+        });
+    });
+
     $('.jsAdd').on('click', function (e) {
         e.preventDefault();
         var $this = $(this),
@@ -210,6 +259,7 @@ $(function () {
                     add.addClass('added');
                     textObj.text('В корзине');
                     $this.remove();
+                    addCart(1);
                 } else {
                     alert('Что-то пошло не так, попробуйте еще раз!!!');
                 }
@@ -220,6 +270,33 @@ $(function () {
         });
 
     });
+
+    function refreshCart(count) {
+        var cart = $('.cart'),
+            countObj = cart.find('.cart__count'),
+            countText = cart.find('.cart__text'),
+            text = '';
+
+        text = 'добавлено ' + count + ' ' + GetNoun(count, 'товар', "товара", "товаров");
+
+        countObj.text(count);
+        countText.text(text);
+    }
+
+    function addCart(add) {
+        var cart = $('.cart'),
+            countObj = cart.find('.cart__count'),
+            countText = cart.find('.cart__text'),
+            text = '',
+            count = parseInt(countObj.text());
+
+        count += add;
+        text = 'добавлено ' + count + ' ' + GetNoun(count, 'товар', "товара", "товаров");
+
+        countObj.text(count);
+        countText.text(text);
+
+    }
 
     $('.jsAddFavorites').on('click', function (e) {
         e.preventDefault();
@@ -378,12 +455,12 @@ $(function () {
             mmenu.removeClass('open');
         }
     });
-    
+
     $('.mmenu__close').on('click', function () {
         var mmenu = $(this).closest('.mmenu');
         mmenu.removeClass('open');
     });
-    
+
     $('.mmenu__item-link').on('click', function (e) {
 
         var link = $(this),
@@ -391,7 +468,7 @@ $(function () {
             item = link.closest('.mmenu__item'),
             drop = item.find('.mmenu-2');
 
-        if (drop.length>0) {
+        if (drop.length > 0) {
             e.preventDefault();
             item.toggleClass('open');
             drop.slideToggle(300);
@@ -410,7 +487,7 @@ $(function () {
                 val: val
             };
 
-        if(!val) {
+        if (!val) {
             drop.removeClass('active');
             return;
         }
@@ -598,8 +675,7 @@ $(function () {
         ]
     });
     /*END SLIDERS*/
-})
-;
+});
 
 /*YANDEX*/
 $(function () {

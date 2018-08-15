@@ -17,6 +17,9 @@
   }
 
   &__articul {
+    @include lg-block {
+      margin-bottom: 0;
+    };
     font-size: 14px;
     margin-bottom: 50px;
   }
@@ -34,11 +37,20 @@
   }
 
   &__img {
+    @include lg-block {
+      padding: 0;
+      margin-bottom: 10px;
+    };
     margin-bottom: 50px;
     padding-right: 30px;
     position: relative;
   }
   &__fancybox {
+    @include lg-block {
+
+      padding: 40px;
+    };
+
     position: absolute;
     top: 0;
     bottom: 0;
@@ -211,6 +223,12 @@
   }
 
   &__add {
+
+    &.added {
+      pointer-events: none;
+      opacity: .5;
+    }
+
     display: flex;
     align-items: center;
     width: 100%;
@@ -247,6 +265,13 @@
 
     display: flex;
     align-items: center;
+
+    &.active {
+      color: #249f7f;
+      svg {
+        fill: #249f7f;
+      }
+    }
 
     &_mobile {
       display: flex;

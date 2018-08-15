@@ -1628,6 +1628,9 @@ input[type=number] {
   @media screen and (max-width: 1199.99px) {
     .advantage {
       margin-bottom: 60px; } }
+  @media screen and (max-width: 767.99px) {
+    .advantage {
+      margin-bottom: 30px; } }
   @media screen and (max-width: 575.99px) {
     .advantage {
       width: calc(100% - 30px); } }
@@ -1723,6 +1726,9 @@ input[type=number] {
       font-weight: 700;
       letter-spacing: 0.4px;
       margin-bottom: 15px; }
+      @media screen and (max-width: 767.99px) {
+        .catalog__items-title {
+          font-size: 18px; } }
     .catalog__items-wrapper {
       height: 366px;
       -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
@@ -1808,11 +1814,17 @@ input[type=number] {
         display: none; } }
   .related__prev {
     margin-left: calc(4.16667% + 15px); }
+    @media screen and (max-width: 1199.99px) {
+      .related__prev {
+        margin-left: calc(0% + 15px); } }
   .related__next {
     margin-right: calc(4.16667% + 15px);
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end; }
+    @media screen and (max-width: 1199.99px) {
+      .related__next {
+        margin-right: calc(0% + 15px); } }
   .related__button.slick-disabled svg {
     fill: #b1b1b1; }
   .related__svg {
@@ -1829,6 +1841,9 @@ input[type=number] {
     margin-left: 15px;
     margin-right: 15px;
     width: calc(75% - 30px); }
+    @media screen and (max-width: 1199.99px) {
+      .related__container {
+        width: calc(83.33333% - 30px); } }
     @media screen and (max-width: 767.99px) {
       .related__container {
         width: calc(100% - 30px); } }
@@ -2325,6 +2340,9 @@ input[type=number] {
   .product__articul {
     font-size: 14px;
     margin-bottom: 50px; }
+    @media screen and (max-width: 1199.99px) {
+      .product__articul {
+        margin-bottom: 0; } }
   .product__left {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -2346,6 +2364,10 @@ input[type=number] {
     margin-bottom: 50px;
     padding-right: 30px;
     position: relative; }
+    @media screen and (max-width: 1199.99px) {
+      .product__img {
+        padding: 0;
+        margin-bottom: 10px; } }
   .product__fancybox {
     position: absolute;
     top: 0;
@@ -2364,6 +2386,9 @@ input[type=number] {
     cursor: -webkit-zoom-in;
     cursor: zoom-in;
     outline: none; }
+    @media screen and (max-width: 1199.99px) {
+      .product__fancybox {
+        padding: 40px; } }
   .product__pic {
     max-height: 100%; }
   .product__right {
@@ -2549,6 +2574,9 @@ input[type=number] {
     -ms-flex-align: center;
     align-items: center;
     width: 100%; }
+    .product__add.added {
+      pointer-events: none;
+      opacity: .5; }
     .product__add-svg {
       width: 18px;
       fill: #ffffff;
@@ -2586,6 +2614,10 @@ input[type=number] {
     @media screen and (max-width: 575.99px) {
       .product__compare, .product__favorite {
         display: none; } }
+    .product__compare.active, .product__favorite.active {
+      color: #249f7f; }
+      .product__compare.active svg, .product__favorite.active svg {
+        fill: #249f7f; }
     .product__compare_mobile, .product__favorite_mobile {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -3467,6 +3499,9 @@ input[type=number] {
     margin-left: 15px;
     margin-right: 15px;
     width: calc(25% - 30px); }
+    @media screen and (max-width: 1199.99px) {
+      .history__w-number {
+        width: calc(33.33333% - 30px); } }
     @media screen and (max-width: 767.99px) {
       .history__w-number {
         width: calc(100% - 30px); } }
@@ -3495,6 +3530,9 @@ input[type=number] {
           display: block; } }
   .history__w-sum {
     margin-right: calc(8.33333% + 15px); }
+    @media screen and (max-width: 1199.99px) {
+      .history__w-sum {
+        margin-right: calc(0% + 15px); } }
   .history__w-product {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -3590,12 +3628,6 @@ input[type=number] {
       color: #249f7f;
       font-size: 18px;
       font-weight: 700; }
-      @media screen and (max-width: 1199.99px) {
-        .history__number-text {
-          font-size: 14px; } }
-      @media screen and (max-width: 767.99px) {
-        .history__number-text {
-          font-size: 18px; } }
   .history__date, .history__count {
     text-align: center; }
     @media screen and (max-width: 767.99px) {
