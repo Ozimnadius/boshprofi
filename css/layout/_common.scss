@@ -589,3 +589,20 @@ input[type=number] {
 .mCSB_inside > .mCSB_container {
   margin-right: 0;
 }
+
+.scrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: -999px;
+  z-index: 100;
+  cursor: pointer;
+
+  &.active {
+    right: 20px;
+  }
+
+  svg {
+    width: 70px;
+    height: 70px;
+  }
+}

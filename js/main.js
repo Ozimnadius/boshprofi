@@ -594,6 +594,27 @@ $(function () {
     });
     /*END CABINET*/
 
+    /*SCROLLTOP*/
+    $('.scrollTop').on('click', function (e) {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
+    });
+
+    $(window).on('scroll', function () {
+        var currScroll = $(window).scrollTop();
+
+        if (currScroll > 200) {
+            $('.scrollTop').addClass('active');
+        }
+        else {
+            $('.scrollTop').removeClass('active');
+        }
+
+        nextScroll = currScroll;
+    });
+    /*END SCROLLTOP*/
+
 
     /*VENDOR*/
     $('.catalog__items-list').mCustomScrollbar({
@@ -697,7 +718,7 @@ $(function () {
     function init() {
 
         if ($('#map').length) {
-            var center = [55.720105610873475, 37.71844732368926];
+            var center = [55.7210620690067, 37.72593599999998];
             // if ($(window).width() < 576) {
             //     center = [55.609501798660396, 37.61325538360591];
             // }

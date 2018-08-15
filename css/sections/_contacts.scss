@@ -16,6 +16,13 @@
     @include size-lg(8);
     margin-right: 0;
   };
+  @include size-sm(24);
+  @include sm-block {
+    margin-bottom: 25px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  };
 
   margin-right: 75px;
 
@@ -50,6 +57,9 @@
 #map {
   @include lg-block {
     height: 320px;
+  };
+  @include sm-block {
+    height: 190px;
   };
   height: 480px;
 }

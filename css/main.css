@@ -715,6 +715,18 @@ input[type=number] {
 .mCSB_inside > .mCSB_container {
   margin-right: 0; }
 
+.scrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: -999px;
+  z-index: 100;
+  cursor: pointer; }
+  .scrollTop.active {
+    right: 20px; }
+  .scrollTop svg {
+    width: 70px;
+    height: 70px; }
+
 /*------------------------SECTION-HEADER----------------*/
 .header {
   /* top */
@@ -2905,6 +2917,14 @@ input[type=number] {
   @media screen and (max-width: 1199.99px) and (max-width: 1199.99px) {
     .contact {
       width: calc(33.33333% - 30px); } }
+  @media screen and (max-width: 767.99px) {
+    .contact {
+      width: calc(100% - 30px); } }
+  @media screen and (max-width: 767.99px) {
+    .contact {
+      margin-bottom: 25px; }
+      .contact:last-child {
+        margin-bottom: 0; } }
   .contact:last-child {
     margin-right: 0; }
   .contact__title {
@@ -2931,6 +2951,9 @@ input[type=number] {
   @media screen and (max-width: 1199.99px) {
     #map {
       height: 320px; } }
+  @media screen and (max-width: 767.99px) {
+    #map {
+      height: 190px; } }
 
 .scheme {
   background: #fafafa;
