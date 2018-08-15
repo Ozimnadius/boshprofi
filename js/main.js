@@ -604,8 +604,6 @@ $(function () {
     $(window).on('scroll', function () {
         var currScroll = $(window).scrollTop();
 
-        console.log(currScroll);
-
         if (currScroll > 200) {
             $('.scrollTop').addClass('active');
         }
